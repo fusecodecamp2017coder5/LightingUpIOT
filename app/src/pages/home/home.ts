@@ -32,8 +32,8 @@ export class HomePage {
     this.events.subscribe('didRangeBeaconsInRegion', (data) => {
       this.zone.run(() => {
         this.debug_messages = "In range so fun";
-        this.beacons = []
-        let beaconlist = data.beacons
+        this.beacons = [];
+        let beaconlist = data.beacons;
         beaconList.forEach((beacon) => {
           let beaconObject = new BeaconModel(beacon);
           this.beacons.push(beaconObject);
