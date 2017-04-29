@@ -37,6 +37,7 @@ export class HomePage {
         beaconList.forEach((beacon) => {
           let beaconObject = new BeaconModel(beacon);
           this.beacons.push(beaconObject);
+        });
       });
     });
   }
