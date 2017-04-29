@@ -33,7 +33,7 @@ export class HomePage {
       this.zone.run(() => {
         this.debug_messages = "In range so fun";
         this.beacons = [];
-        let beaconlist = data.beacons;
+        let beaconList = data.beacons;
         beaconList.forEach((beacon) => {
           let beaconObject = new BeaconModel(beacon);
           this.beacons.push(beaconObject);
